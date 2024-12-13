@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Add Project
+  body
+    h1 Add Project
+    form(action="/admin/projects" method="post")
+      label Name
+      input(type="text" name="name" required)
+      label Description
+      textarea(name="description" required)
+      label Technologies (comma-separated)
+      input(type="text" name="technologies" required)
+      label Link
+      input(type="url" name="link")
+      button(type="submit") Add Project
