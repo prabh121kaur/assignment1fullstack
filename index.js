@@ -9,6 +9,9 @@ dotenv.config();
 
 const app = express();
 
+// Use environment variable PORT or fallback to 10000
+const PORT = process.env.PORT || 10000; 
+
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Could not connect to MongoDB', err));
