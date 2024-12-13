@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title Add Skill
+  body
+    h1 Add Skill
+    form(action="/admin/skills" method="post")
+      label Name
+      input(type="text" name="name" required)
+      label Level
+      input(type="text" name="level" required)
+      button(type="submit") Add Skill
